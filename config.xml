@@ -1,0 +1,67 @@
+<!-- https://build.phonegap.com/docs/config-xml -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<widget
+	xmlns="http://www.w3.org/ns/widgets"
+	xmlns:gap="http://phonegap.com/ns/1.0"
+	id="com.acrid.base"
+	version="1.0.0">
+
+	<name>Base App</name>
+
+	<description>acrid.pl Base App</description>
+
+	<author
+		href="http://www.acrid.pl/"
+		email="info@acrid.com">
+		acrid.pl
+	</author>
+
+	<gap:platforms>
+		<gap:platform name="android" minVersion="2.1" />
+		<gap:platform name="webos" />
+		<gap:platform name="symbian.wrt" />
+		<gap:platform name="blackberry" project="widgets" />
+	</gap:platforms>
+	
+    <preference name="phonegap-version"     value="2.3.0" />
+    <preference name="orientation"          value="portrait" />
+    <preference name="target-device"        value="universal" />
+    <preference name="fullscreen"           value="true" />
+	<preference name="autorotate"           value="false" readonly="true" />
+	<preference name="AutoHideSplashScreen" value="false" />
+
+    <icon src="icon.png" />
+    <icon src="res/icon-36x36-android.png"                gap:platform="android"    gap:density="ldpi" />
+    <icon src="res/icon-48x48-android-bada-wp.png"        gap:platform="android"    gap:density="mdpi" />
+    <icon src="res/icon-72x72-android-ios.png"            gap:platform="android"    gap:density="hdpi" />
+    <icon src="res/icon-96x96-android.png"                gap:platform="android"    gap:density="xhdpi" />
+    <icon src="res/icon-80x80-blackberry-bada.png"        gap:platform="blackberry" />
+    <icon src="res/icon-80x80-blackberry-bada.png"        gap:platform="blackberry" gap:state="hover" />
+    <icon src="res/icon-57x57-ios.png"                    gap:platform="ios"        width="57" height="57" />
+    <icon src="res/icon-72x72-android-ios.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="res/icon-114x114-ios.png"                  gap:platform="ios"        width="114" height="114" />
+    <icon src="res/icon-144x144-ios.png"                  gap:platform="ios"        width="144" height="144" />
+    <icon src="res/icon-64x64-webos.png"                  gap:platform="webos" />
+    <icon src="res/icon-48x48-android-bada-wp.png"        gap:platform="winphone" />
+    <icon src="res/icon-173x173-wp.png"                   gap:platform="winphone"   gap:role="background" />
+
+    <gap:splash src="res/splash-200x320-android.png"             gap:platform="android" gap:density="ldpi"  width="200" height="320" />
+    <gap:splash src="res/splash-320x480-android-bada-ios.png"    gap:platform="android" gap:density="mdpi"  width="320" height="480" />
+    <gap:splash src="res/splash-480x800-android-bada-wp.png"     gap:platform="android" gap:density="hdpi"  width="480" height="800" />
+    <gap:splash src="res/splash-720x1280-android.png"            gap:platform="android" gap:density="xhdpi" width="720" height="1280" />
+    <gap:splash src="res/splash-320x200-android.png"             gap:platform="android" gap:density="ldpi"  width="320" height="200" />
+    <gap:splash src="res/splash-480x320-android-bada-ios.png"    gap:platform="android" gap:density="mdpi"  width="480" height="320" />
+    <gap:splash src="res/splash-800x480-android-bada-wp.png"     gap:platform="android" gap:density="hdpi"  width="800" height="480" />
+    <gap:splash src="res/splash-1280x720-android.png"            gap:platform="android" gap:density="xhdpi" width="1280" height="720" />
+    <gap:splash src="res/splash-225x225-blackberry.png"          gap:platform="blackberry" />
+    <gap:splash src="res/splash-320x480-android-bada-ios.png"    gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/splash-640x960-ios.png"                 gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/splash-768x1024-ios.png"                gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="res/splash-1024x768-ios.png"                gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="res/splash-480x800-wp.jpg"                  gap:platform="winphone" />
+	
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	
+	<access origin="http://www.acrid.pl" subdomains="true" />
+</widget>

@@ -1,4 +1,4 @@
-# Icon and splash screen sizes for PhoneGap applications
+# Icon and splash screen sizes for PhoneGap
 
 This is a simple base / bootstrap application for PhoneGap, that have resources for icons and splash screens for all six mobile platform, that PhoneGap is supporting.
 
